@@ -10,7 +10,7 @@ jobs:
       - name: env-setup
         run: |
           pwd
-          echo $HOME
+          echo ${HOME}
           ls
       - name: test
         run: |

@@ -10,11 +10,12 @@ jobs:
       - name: env-setup
         run: |
           pwd
+          echo $HOME
           ls
       - name: test
         run: |
             cd $HOME
-            make run
+            pwd
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       - name: List files in the repository
         run: |
